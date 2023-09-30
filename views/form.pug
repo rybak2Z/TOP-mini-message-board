@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  form(method='POST' action='/new')
+    div
+      label(for='name') Name
+      input(type='text' id='name' name='name')
+    div
+      label(for='messageText') Message
+      input(type='text' id='messageText' name='messageText')
+    input(type='submit' value='Submit')
